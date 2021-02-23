@@ -1,0 +1,25 @@
+{
+  "name": "questoes",
+  "version": "1.0.0",
+  "description": "This template was made by Colorlib (https://colorlib.com) Please visit our website for more awesome templates, themes and tools.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcarvalh0/questoes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielcarvalh0/questoes/issues"
+  },
+  "homepage": "https://github.com/gabrielcarvalh0/questoes#readme",
+  "dependencies": {
+    "vercel-php": "^0.4.0"
+  }
+}
