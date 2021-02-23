@@ -78,6 +78,8 @@ echo $contagemD;
 echo '</br>';
 echo '</br>';
 
+exit;
+
 if ($contagemA > $contagemB and $contagemA > $contagemC and $contagemA > $contagemD) {
 	echo 'Redirecionar pagina com mais numeros de A';
 	$_SESSION['descricao'] = 'Influenciador';

@@ -1,7 +1,7 @@
 <?php 
+ob_start();
+session_start();
 
-echo   'oi';
-exit;
 ?>
 
 <html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
