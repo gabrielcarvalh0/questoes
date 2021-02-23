@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo projeto</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/scss/bd-wizard.css">
+
+</head>
+
+<body onload="new PageController()">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+  <main class="d-flex align-items-center">
+    <div class="container">
+      <form action="../result/" method="POST" enctype="multipart/form-data">
+        <div id="wizard">
+          <h3>Passo 1</h3>
+          <section>
+            <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+            <div class="col-sm-8">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <!-- con 1 -->
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 1</p>
+                      </div>
+
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+
+
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-1" id="grupA-1" value="A" >
+                          <label class="form-check-label" for="grupA-1">
+                            A - <span class="a">Animado</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-1" id="grupB-1" value="B">
+                          <label class="form-check-label" for="grupB-1">
+                            B - <span class="b">Aventureiro</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-1" id="grupC-1" value="C">
+                          <label class="form-check-label" for="grupC-1">
+                            C - <span class="c">Analítico</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-1" id="grupD-1" value="D">
+                          <label class="form-check-label" for="grupD-1">
+                            D - <span class="d">Adaptável</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- con 2 -->
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder">Conjunto 3</p>
+                      </div>
+
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-2" id="grupA-2" value="A" >
+                          <label class="form-check-label" for="grupA-2">
+                            A - <span class="a">Brincalhão</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-2" id="grupB-2" value="B">
+                          <label class="form-check-label" for="grupB-2">
+                            B - <span class="b">Persuasivo</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-2" id="grupC-2" value="C">
+                          <label class="form-check-label" for="grupC-2">
+                            C - <span class="c">Persistente</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-2" id="grupD-2" value="D">
+                          <label class="form-check-label" for="grupD-2">
+                            D - <span class="d">Sereno</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <!-- con 3 -->
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder">Conjunto 2</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-3" id="grupA-3" value="A" >
+                          <label class="form-check-label" for="grupA-3">
+                            A - <span class="a">Convincente</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-3" id="grupB-3" value="B">
+                          <label class="form-check-label" for="grupB-3">
+                            B - <span class="b">Competitivo</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-3" id="grupC-3" value="C">
+                          <label class="form-check-label" for="grupC-3">
+                            C - <span class="c">Atencioso</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-3" id="grupD-3" value="D">
+                          <label class="form-check-label" for="grupD-3">
+                            D - <span class="d">Controlado</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- con 4 -->
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder">Conjunto 4</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-4" id="grupA-4" value="A">
+                          <label class="form-check-label" for="grupA-4">
+                            A - <span class="a">Estimulante</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-4" id="grupB-4" value="B">
+                          <label class="form-check-label" for="grupB-4">
+                            B - <span class="b">Habilidoso</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-4" id="grupC-4" value="C">
+                          <label class="form-check-label" for="grupC-4">
+                            C - <span class="c">Respeitoso</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-4" id="grupD-4" value="D">
+                          <label class="form-check-label" for="grupD-4">
+                            D - <span class="d">Reservado</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <h3>Passo 2</h3>
+          <section>
+            <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+            <div class="col-sm-8">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 1</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check  ">
+                          <input class="form-check-input" type="radio" name="grup-5" id="grupA-5" value="A" >
+                          <label class="form-check-label" for="grupA-5">
+                            A - <span class="a">Espirituoso</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-5" id="grupB-5" value="B">
+                          <label class="form-check-label" for="grupB-5">
+                            B - <span class="b">Autossuficiente</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-5" id="grupC-5" value="C">
+                          <label class="form-check-label" for="grupC-5">
+                            C - <span class="c">Sensível</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-5" id="grupD-5" value="D">
+                          <label class="form-check-label" for="grupD-5">
+                            D - <span class="d">Satisfeito</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 3</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-6" id="grupA-6" value="A">
+                          <label class="form-check-label" for="grupA-6">
+                            A - <span class="a">Charmoso</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-6" id="grupB-6" value="B">
+                          <label class="form-check-label" for="grupB-6">
+                            B - <span class="b">Positivo</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-6" id="grupC-6" value="C">
+                          <label class="form-check-label" for="grupC-6">
+                            C - <span class="c">Planejador</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-6" id="grupD-6" value="D">
+                          <label class="form-check-label" for="grupD-6">
+                            D - <span class="d">Paciente</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm">
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 2</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-7" id="grupA-7" value="A">
+                          <label class="form-check-label" for="grupA-7">
+                            A - <span class="a">Espontâneo</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-7" id="grupB-7" value="B">
+                          <label class="form-check-label" for="grupB-7">
+                            B - <span class="b">Seguro</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-7" id="grupC-7" value="C">
+                          <label class="form-check-label" for="grupC-7">
+                            C - <span class="c">Organizado</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-7" id="grupD-7" value="D">
+                          <label class="form-check-label" for="grupD-7">
+                            D - <span class="d">Tímido</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 4</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-8" id="grupA-8" value="A">
+                          <label class="form-check-label" for="grupA-8">
+                            A - <span class="a">Otimista</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-8" id="grupB-8" value="B">
+                          <label class="form-check-label" for="grupB-8">
+                            B - <span class="b">Franco</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-8" id="grupC-8" value="C">
+                          <label class="form-check-label" for="grupC-8">
+                            C - <span class="c">Ordeiro</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-8" id="grupD-8" value="D">
+                          <label class="form-check-label" for="grupD-8">
+                            D - <span class="d">Serviçal</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+          </section>
+          <h3>Passo 3</h3>
+          <section>
+            <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+            <div class="col-sm-8">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 1</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-9" id="grupA-9" value="A" >
+                          <label class="form-check-label" for="grupA-9">
+                            A - <span class="a">Engraçado</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-9" id="grupB-9" value="B">
+                          <label class="form-check-label" for="grupB-9">
+                            B- <span class="b">Vigoroso</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-9" id="grupC-9" value="C">
+                          <label class="form-check-label" for="grupC-9">
+                            C - <span class="c">Fiel</span>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-9" id="grupD-9" value="D">
+                          <label class="form-check-label" for="grupD-9">
+                            D - <span class="d">Amigável</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 3</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-10" id="grupA-10" value="A">
+                          <label class="form-check-label" for="grupA-10">
+                            A - <span class="a">Encantador</span> 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-10" id="grupB-10" value="B">
+                          <label class="form-check-label" for="grupB-10">
+                            B-  <span class="b">Audacioso</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-10" id="grupC-10" value="C">
+                          <label class="form-check-label" for="grupC-10">
+                            C -   <span class="c">Minucioso</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-10" id="grupD-10" value="D">
+                          <label class="form-check-label" for="grupD-10">
+                            D -  <span class="d">Diplomático</span> 
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm">
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 2</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-11" id="grupA-11" value="A">
+                          <label class="form-check-label" for="grupA-11">
+                            A -  <span class="a">Alegre</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-11" id="grupB-11" value="B">
+                          <label class="form-check-label" for="grupB-11">
+                            B -  <span class="b">Confiante</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-11" id="grupC-11" value="C">
+                          <label class="form-check-label" for="grupC-11">
+                            C -   <span class="c">Culto</span> 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-11" id="grupD-11" value="D">
+                          <label class="form-check-label" for="grupD-11">
+                            D -  <span class="d">Previsível</span>  
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 4</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-12" id="grupA-12" value="A">
+                          <label class="form-check-label" for="grupA-12">
+                            A -  <span class="a">Inspirado</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-12" id="grupB-12" value="B">
+                          <label class="form-check-label" for="grupB-12">
+                            B -  <span class="b">Independente</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-12" id="grupC-12" value="C">
+                          <label class="form-check-label" for="grupC-12">
+                            C -  <span class="c">Idealista</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-12" id="grupD-12" value="D">
+                          <label class="form-check-label" for="grupD-12">
+                            D -  <span class="d">Inofensivo</span>  
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+          </section>
+          <h3>Passo 4</h3>
+          <section>
+            <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+            <div class="col-sm-8">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 1</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-13" id="grupA-13" value="A" >
+                          <label class="form-check-label" for="grupA-13">
+                            A -  <span class="a">Demonstrativo</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-13" id="grupB-13" value="B">
+                          <label class="form-check-label" for="grupB-13">
+                            B -  <span class="b">Decidido</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-13" id="grupC-13" value="C">
+                          <label class="form-check-label" for="grupC-13">
+                            C - <span class="c">Profundo</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-13" id="grupD-13" value="D">
+                          <label class="form-check-label" for="grupD-13">
+                            D -  <span class="d">Irônico</span> 
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 3</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-14" id="grupA-14" value="A">
+                          <label class="form-check-label" for="grupA-14">
+                            A -  <span class="a">Desembaraçado</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-14" id="grupB-14" value="B">
+                          <label class="form-check-label" for="grupB-14">
+                            B -  <span class="b">Ativo</span> 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-14" id="grupC-14" value="C">
+                          <label class="form-check-label" for="grupC-14">
+                            C -  <span class="c">Musical</span> 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-14" id="grupD-14" value="D">
+                          <label class="form-check-label" for="grupD-14">
+                            D - <span class="d">Mediador</span>  
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm">
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 2</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-15" id="grupA-15" value="A">
+                          <label class="form-check-label" for="grupA-15">
+                            A -  <span class="a">Conversador</span> 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-15" id="grupB-15" value="B">
+                          <label class="form-check-label" for="grupB-15">
+                            B -  <span class="b">Firme</span> 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-15" id="grupC-15" value="C">
+                          <label class="form-check-label" for="grupC-15">
+                            C - <span class="c">Pensativo</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-15" id="grupD-15" value="D">
+                          <label class="form-check-label" for="grupD-15">
+                            D -  <span class="d">Tolerante</span>  
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bg-white text-left p-2">
+                      <div class="bg-white ">
+                        <p class="mb-0 fw-bolder ">Conjunto 4</p>
+                      </div>
+                      <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-16" id="grupA-16" value="A">
+                          <label class="form-check-label" for="grupA-16">
+                            A -  <span class="a">Vivo</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-16" id="grupB-16" value="B">
+                          <label class="form-check-label" for="grupB-16">
+                            B -  <span class="b">Líder</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-16" id="grupC-16" value="C">
+                          <label class="form-check-label" for="grupC-16">
+                            C -  <span class="c">Leal</span>  
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="grup-16" id="grupD-16" value="D">
+                          <label class="form-check-label" for="grupD-16">
+                            D -  <span class="d">Ouvinte</span>  
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+          </section>
+          <!-- 
+<h3>Passo 5</h3>
+<section>
+  <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+  <div class="col-sm-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+      
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 1</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupA-9" value="A" >
+              <label class="form-check-label" for="grupA-9">
+                A - Atraente 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupB-9" value="B">
+              <label class="form-check-label" for="grupB-9">
+                B- Chefe
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupC-9" value="C">
+              <label class="form-check-label" for="grupC-9">
+                C - Detalhista
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupD-9" value="D">
+              <label class="form-check-label" for="grupD-9">
+                D - Contente
+              </label>
+            </div>
+
+          </div>
+          </div>
+  
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 3</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupA-10" value="A">
+              <label class="form-check-label" for="grupA-10">
+                A - Encantador
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupB-10" value="B">
+              <label class="form-check-label" for="grupB-10">
+                B- Audacioso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupC-10" value="C">
+              <label class="form-check-label" for="grupC-10">
+                C - Minucioso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupD-10" value="D">
+              <label class="form-check-label" for="grupD-10">
+                D - Diplomático
+              </label>
+            </div>
+
+          </div>
+          </div>
+        </div>
+          
+
+        <div class="col-sm">
+      
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 2</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupA-11" value="A">
+              <label class="form-check-label" for="grupA-11">
+                A - Alegre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupB-11" value="B">
+              <label class="form-check-label" for="grupB-11">
+                B- Confiante
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupC-11" value="C">
+              <label class="form-check-label" for="grupC-11">
+                C - Culto
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupD-11" value="D">
+              <label class="form-check-label" for="grupD-11">
+                D - Previsível
+              </label>
+            </div>
+          </div>
+          </div>
+       
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 4</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupA-12" value="A">
+              <label class="form-check-label" for="grupA-12">
+                A - Inspirado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupB-12" value="B">
+              <label class="form-check-label" for="grupB-12">
+                B- Independente
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupC-12" value="C">
+              <label class="form-check-label" for="grupC-12">
+                C - Idealista
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupD-12" value="D">
+              <label class="form-check-label" for="grupD-12">
+                D - Inofensivo
+              </label>
+            </div>
+
+          </div>
+          </div>
+        </div>
+    
+    </div>
+</section>
+<h3>Passo 6</h3>
+<section>
+  <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+  <div class="col-sm-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+     
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 1</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupA-13" value="A" >
+              <label class="form-check-label" for="grupA-13">
+                A - Popular
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupB-13" value="B">
+              <label class="form-check-label" for="grupB-13">
+                B- Produtivo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupC-13" value="C">
+              <label class="form-check-label" for="grupC-13">
+                C - Perfeccionista
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupD-13" value="D">
+              <label class="form-check-label" for="grupD-13">
+                D - Agradável
+              </label>
+            </div>
+
+          </div>
+          </div>
+    
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 3</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupA-14" value="A">
+              <label class="form-check-label" for="grupA-14">
+                A - Desembaraçado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupB-14" value="B">
+              <label class="form-check-label" for="grupB-14">
+                B- Ativo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupC-14" value="C">
+              <label class="form-check-label" for="grupC-14">
+                C - Musical
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupD-14" value="D">
+              <label class="form-check-label" for="grupD-14">
+                D - Mediador
+              </label>
+            </div>
+
+          </div>
+          </div>
+        
+          </div>
+        <div class="col-sm">
+
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 2</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupA-15" value="A">
+              <label class="form-check-label" for="grupA-15">
+                A - Conversador
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupB-15" value="B">
+              <label class="form-check-label" for="grupB-15">
+                B- Firme
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupC-15" value="C">
+              <label class="form-check-label" for="grupC-15">
+                C - Pensativo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupD-15" value="D">
+              <label class="form-check-label" for="grupD-15">
+                D - Tolerante
+              </label>
+            </div>
+          </div>
+          </div>
+    
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 4</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupA-16" value="A">
+              <label class="form-check-label" for="grupA-16">
+                A - Vivo 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupB-16" value="B">
+              <label class="form-check-label" for="grupB-16">
+                B- Líder 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupC-16" value="C">
+              <label class="form-check-label" for="grupC-16">
+                C - Leal 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupD-16" value="D">
+              <label class="form-check-label" for="grupD-16">
+                D - Ouvinte
+              </label>
+            </div>
+
+          </div>
+          </div>
+        
+      </div>
+    </div>
+</section>
+<h3>Passo 7</h3>
+<section>
+  <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+  <div class="col-sm-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+      
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 1</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupA-9" value="A" >
+              <label class="form-check-label" for="grupA-9">
+                A - Vivaz 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupB-9" value="B">
+              <label class="form-check-label" for="grupB-9">
+                B- Valente
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupC-9" value="C">
+              <label class="form-check-label" for="grupC-9">
+                C - Comportado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupD-9" value="D">
+              <label class="form-check-label" for="grupD-9">
+                D - Equilibrado
+              </label>
+            </div>
+
+          </div>
+          </div>
+  
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 3</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupA-10" value="A">
+              <label class="form-check-label" for="grupA-10">
+                A - Encantador
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupB-10" value="B">
+              <label class="form-check-label" for="grupB-10">
+                B- Audacioso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupC-10" value="C">
+              <label class="form-check-label" for="grupC-10">
+                C - Minucioso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupD-10" value="D">
+              <label class="form-check-label" for="grupD-10">
+                D - Diplomático
+              </label>
+            </div>
+
+          </div>
+          </div>
+        </div>
+          
+
+        <div class="col-sm">
+      
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 2</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupA-11" value="A">
+              <label class="form-check-label" for="grupA-11">
+                A - Alegre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupB-11" value="B">
+              <label class="form-check-label" for="grupB-11">
+                B- Confiante
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupC-11" value="C">
+              <label class="form-check-label" for="grupC-11">
+                C - Culto
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupD-11" value="D">
+              <label class="form-check-label" for="grupD-11">
+                D - Previsível
+              </label>
+            </div>
+          </div>
+          </div>
+       
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 4</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupA-12" value="A">
+              <label class="form-check-label" for="grupA-12">
+                A - Inspirado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupB-12" value="B">
+              <label class="form-check-label" for="grupB-12">
+                B- Independente
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupC-12" value="C">
+              <label class="form-check-label" for="grupC-12">
+                C - Idealista
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupD-12" value="D">
+              <label class="form-check-label" for="grupD-12">
+                D - Inofensivo
+              </label>
+            </div>
+
+          </div>
+          </div>
+        </div>
+    
+    </div>
+</section>
+<h3>Passo 8</h3>
+<section>
+  <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+  <div class="col-sm-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+     
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 1</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupA-13" value="A" >
+              <label class="form-check-label" for="grupA-13">
+                A - Metido 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupB-13" value="B">
+              <label class="form-check-label" for="grupB-13">
+                B- Mandão
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupC-13" value="C">
+              <label class="form-check-label" for="grupC-13">
+                C - Acanhado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupD-13" value="D">
+              <label class="form-check-label" for="grupD-13">
+                D - Vazio
+              </label>
+            </div>
+
+          </div>
+          </div>
+    
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 3</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupA-14" value="A">
+              <label class="form-check-label" for="grupA-14">
+                A - Desembaraçado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupB-14" value="B">
+              <label class="form-check-label" for="grupB-14">
+                B- Ativo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupC-14" value="C">
+              <label class="form-check-label" for="grupC-14">
+                C - Musical
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupD-14" value="D">
+              <label class="form-check-label" for="grupD-14">
+                D - Mediador
+              </label>
+            </div>
+
+          </div>
+          </div>
+        
+          </div>
+        <div class="col-sm">
+
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 2</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupA-15" value="A">
+              <label class="form-check-label" for="grupA-15">
+                A - Conversador
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupB-15" value="B">
+              <label class="form-check-label" for="grupB-15">
+                B- Firme
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupC-15" value="C">
+              <label class="form-check-label" for="grupC-15">
+                C - Pensativo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupD-15" value="D">
+              <label class="form-check-label" for="grupD-15">
+                D - Tolerante
+              </label>
+            </div>
+          </div>
+          </div>
+    
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 4</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupA-16" value="A">
+              <label class="form-check-label" for="grupA-16">
+                A - Vivo 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupB-16" value="B">
+              <label class="form-check-label" for="grupB-16">
+                B- Líder 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupC-16" value="C">
+              <label class="form-check-label" for="grupC-16">
+                C - Leal 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupD-16" value="D">
+              <label class="form-check-label" for="grupD-16">
+                D - Ouvinte
+              </label>
+            </div>
+
+          </div>
+          </div>
+        
+      </div>
+    </div>
+</section>
+
+<h3>Passo 9</h3>
+<section>
+  <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+  <div class="col-sm-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+      
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 1</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupA-9" value="A" >
+              <label class="form-check-label" for="grupA-9">
+                A - Indisciplinado  
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupB-9" value="B">
+              <label class="form-check-label" for="grupB-9">
+                B- Insensível
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupC-9" value="C">
+              <label class="form-check-label" for="grupC-9">
+                C - Rancoroso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupD-9" value="D">
+              <label class="form-check-label" for="grupD-9">
+                D - Desinteressado
+              </label>
+            </div>
+
+          </div>
+          </div>
+  
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 3</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupA-10" value="A">
+              <label class="form-check-label" for="grupA-10">
+                A - Encantador
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupB-10" value="B">
+              <label class="form-check-label" for="grupB-10">
+                B- Audacioso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupC-10" value="C">
+              <label class="form-check-label" for="grupC-10">
+                C - Minucioso
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupD-10" value="D">
+              <label class="form-check-label" for="grupD-10">
+                D - Diplomático
+              </label>
+            </div>
+
+          </div>
+          </div>
+        </div>
+          
+
+        <div class="col-sm">
+      
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 2</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupA-11" value="A">
+              <label class="form-check-label" for="grupA-11">
+                A - Alegre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupB-11" value="B">
+              <label class="form-check-label" for="grupB-11">
+                B- Confiante
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupC-11" value="C">
+              <label class="form-check-label" for="grupC-11">
+                C - Culto
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupD-11" value="D">
+              <label class="form-check-label" for="grupD-11">
+                D - Previsível
+              </label>
+            </div>
+          </div>
+          </div>
+       
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 4</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupA-12" value="A">
+              <label class="form-check-label" for="grupA-12">
+                A - Inspirado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupB-12" value="B">
+              <label class="form-check-label" for="grupB-12">
+                B- Independente
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupC-12" value="C">
+              <label class="form-check-label" for="grupC-12">
+                C - Idealista
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupD-12" value="D">
+              <label class="form-check-label" for="grupD-12">
+                D - Inofensivo
+              </label>
+            </div>
+
+          </div>
+          </div>
+        </div>
+    
+    </div>
+</section>
+<h3>Passo 10</h3>
+<section>
+  <h2 class="section-heading">Escolha 1 entre os 4 grupos</h2>
+  <div class="col-sm-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+     
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 1</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupA-13" value="A" >
+              <label class="form-check-label" for="grupA-13">
+                A - Repetitivo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupB-13" value="B">
+              <label class="form-check-label" for="grupB-13">
+                B- Inflexível
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupC-13" value="C">
+              <label class="form-check-label" for="grupC-13">
+                C - Ressentido
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-1" id="grupD-13" value="D">
+              <label class="form-check-label" for="grupD-13">
+                D - Relutante
+              </label>
+            </div>
+
+          </div>
+          </div>
+    
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 3</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupA-14" value="A">
+              <label class="form-check-label" for="grupA-14">
+                A - Desembaraçado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupB-14" value="B">
+              <label class="form-check-label" for="grupB-14">
+                B- Ativo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupC-14" value="C">
+              <label class="form-check-label" for="grupC-14">
+                C - Musical
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-2" id="grupD-14" value="D">
+              <label class="form-check-label" for="grupD-14">
+                D - Mediador
+              </label>
+            </div>
+
+          </div>
+          </div>
+        
+          </div>
+        <div class="col-sm">
+
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 2</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupA-15" value="A">
+              <label class="form-check-label" for="grupA-15">
+                A - Conversador
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupB-15" value="B">
+              <label class="form-check-label" for="grupB-15">
+                B- Firme
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupC-15" value="C">
+              <label class="form-check-label" for="grupC-15">
+                C - Pensativo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-3" id="grupD-15" value="D">
+              <label class="form-check-label" for="grupD-15">
+                D - Tolerante
+              </label>
+            </div>
+          </div>
+          </div>
+    
+            <div class="bg-white text-left p-2">
+              <div class="bg-white ">
+                <p class="mb-0 fw-bolder ">Conjunto 4</p>
+              </div>
+          <div class="form-group bg-light shadow-sm p-3 mb-5  rounded">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupA-16" value="A">
+              <label class="form-check-label" for="grupA-16">
+                A - Vivo 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupB-16" value="B">
+              <label class="form-check-label" for="grupB-16">
+                B- Líder 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupC-16" value="C">
+              <label class="form-check-label" for="grupC-16">
+                C - Leal 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="grup-4" id="grupD-16" value="D">
+              <label class="form-check-label" for="grupD-16">
+                D - Ouvinte
+              </label>
+            </div>
+
+          </div>
+          </div>
+        
+      </div>
+    </div>
+</section> -->
+
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.steps.min.js"></script>
+  <script src="assets/js/bd-wizard.js"></script>
+  <script src="src/controller/PageController.js"></script>
+  <script src="src/page.js"></script>
+</body>
+
+</html>

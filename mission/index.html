@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form  method="POST" id="signup-form" class="signup-form" enctype="multipart/form-data">
+                <h3></h3>
+                <fieldset>
+                    <span class="step-current"> <span class="step-current-content"><span
+                                class="step-number"><span>01</span>/03</span></span> </span>
+                    <div class="fieldset-flex">
+                        <figure>
+                            <img src="images/signup-img-1.png" alt="">
+                        </figure>
+                        <div class="fieldset-content">
+                            <h2>Objetivo</h2>
+
+                            <div class="form-flex">
+                                <p>Este teste tem como objetivo demonstrar de forma clara e simples qual o seu
+                                    perfil comportamental mais evidente. Apresentando seus comportamentos
+                                    positivos, isto é, características que impulsionam a sua carreira, assim como
+                                    possíveis comportamentos limitantes, que podem prejudicar na conquista de suas
+                                    metas e objetivos.
+                                    O mais interessante neste teste de autoconhecimento é fazer com que você
+                                    continue com suas atitudes positivas que contribuem para os seus resultados, e
+                                    tenha consciência dos comportamentos que podem lhe prejudicar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3></h3>
+                <fieldset>
+                    <span class="step-current"><span class="step-current-content"><span
+                                class="step-number"><span>02</span>/03</span></span></span>
+                    <div class="fieldset-flex">
+                        <figure>
+                            <img src="images/signup-img-2.png" alt="">
+                        </figure>
+                        <div class="fieldset-content">
+                            <div class="form-textarea">
+                                <label for="your_review" class="form-label">Como funciona?</label>
+                                <p>Você irá escolher dentre os 40 grupos de palavras, qual palavra melhor se
+                                    encaixa a sua característica pessoal. Por exemplo, no primeiro grupo temos as
+                                    seguintes palavras:
+                                </p>
+                                <option value="">A - Animado</option>
+                                <option value="">B - Aventureiro</option>
+                                <option value="">C - Analítico</option>
+                                <option value="">D - Adaptável</option>
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3></h3>
+                <fieldset>
+                    <span class="step-current"><span class="step-current-content"><span
+                                class="step-number"><span>03</span>/03</span></span></span>
+                    <div class="fieldset-flex">
+                        <figure>
+                            <img src="images/signup-img-3.png" alt="">
+                        </figure>
+                        <div class="fieldset-content">
+                            <label class="form-label">Iniciar teste</label>
+                                <div class="form-group">
+                                    <p>Caso a palavra ANIMADO é sua principal característica neste grupo de
+                                        palavras, você deve marca-la com um “X”, para utilizarmos na segunda parte do
+                                        teste. Note que você poderá escolher apenas uma palavra.
+                                        Cuidado: Não preencha o que você acha certo ou errado, preencha como
+                                        você é. Algumas pessoas têm dificuldade em observar seus comportamentos,
+                                        portanto, observando este problema solicite a uma pessoa que te conheça bem
+                                        para ajudar no processo das escolhas de suas características individuais.
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
